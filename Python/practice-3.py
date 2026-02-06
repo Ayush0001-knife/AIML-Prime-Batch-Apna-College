@@ -1,27 +1,34 @@
-class Student():
-      def __init__(self,name,rollNo,marks):
-            self.__name=name
-            self.__rollNo=rollNo
-            self.__marks=marks
+class Student:
+    def __init__(self, name, roll_no, marks):
+        self.set_name(name)
+        self.set_roll_no(roll_no)
+        self.set_marks(marks)
 
-      def get_student_info(self):
-            print("Name: ",self.__name)
-            print("Roll No: ",self.__rollNo)
-            print("Marks: ",self.__marks)
+    # ----- Getters -----
+    def get_name(self):
+        return self.__name
 
-      def set_student_info(self,name,rollNo,marks):
-            if(marks<0 or marks>100):
-                  print("Invalid marks! Please enter a value between 0 and 100.")
-            elif(rollNo<=0 or rollNo>1000):
-                  print("Invalid roll number! Please enter a positive value less than 1000.")
-            else:
-                  self.__name=name
-                  self.__rollNo=rollNo
-                  self.__marks=marks
+    def get_roll_no(self):
+        return self.__roll_no
 
-student1 = Student("Alice", 101, 85)
-student1.get_student_info()
-student1.set_student_info("Bob", 102, 90)
-student1.get_student_info()
-student1.set_student_info("Charlie", 103, 110)  # Invalid marks
-student1.set_student_info("David", -1, 80)     # Invalid roll number
+    def get_marks(self):
+        return self.__marks
+
+    # ----- Setters with validation -----
+    def set_name(self, name):
+        if name.strip() == "":
+            print("Name cannot be empty!")
+        else:
+            self.__name = name
+
+    def set_roll_no(self, roll_no):
+        if 1 <= roll_no <= 100:
+            self.__roll_no = roll_no
+        else:
+            print("Roll number must be between 1 and 100!")
+
+    def set_marks(self, marks):
+        if marks < 0:
+            print("Marks cannot be negative!")
+        else:
+            self.__marks = marks
