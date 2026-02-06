@@ -1,4 +1,6 @@
 f=open("sample.txt","r")
-data=f.read()
-print(data)
+complete_data=f.read()
+oneLine=f.readline()
+print(complete_data)
+print(oneLine)
 f.close()
