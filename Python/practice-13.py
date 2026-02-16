@@ -24,3 +24,16 @@ with open("cities.json","w") as f:
 with open("cities.json","r") as f:
       py_obj=json.load(f)
       print("After : ",py_obj)   
+
+try:
+    with open("NotFound.txt", "r") as f:
+        data = f.read()
+
+except FileNotFoundError:
+    print("File does not exist")
+
+else:
+    print(data)
+
+finally:
+    print("Program completed")            
