@@ -5,6 +5,8 @@ class Laptop:
             self.ram=ram
             self.storage=storage
 
+       
+      @classmethod
       def get_storage_type(cls):
             print(f"Storage type is {cls.storageType}.")
 
@@ -15,5 +17,4 @@ class Laptop:
 l1=Laptop(16,512)
 l2=Laptop(8,256)  
 
-l1.get_info()
-l2.get_info()
+l1.get_storage_type
