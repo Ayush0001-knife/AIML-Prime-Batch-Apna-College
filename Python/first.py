@@ -5,6 +5,9 @@ class Laptop:
             self.ram=ram
             self.storage=storage
 
+      def get_storage_type(cls):
+            print(f"Storage type is {cls.storageType}.")
+
       def get_info(self):
             print(f"Laptop has {self.ram} GB RAM and {self.storage} GB {self.storageType}.")      
 
