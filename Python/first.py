@@ -11,7 +11,12 @@ class Laptop:
             print(f"Storage type is {cls.storageType}.")
 
       def get_info(self):
-            print(f"Laptop has {self.ram} GB RAM and {self.storage} GB {self.storageType}.")      
+            print(f"Laptop has {self.ram} GB RAM and {self.storage} GB {self.storageType}.")   
+
+      @staticmethod
+      def calc_discount(price,discount):
+            final_price=price-(price*discount/100)
+            print(f"Final price after {discount}% discount is: {final_price}")         
 
 
 l1=Laptop(16,512)
