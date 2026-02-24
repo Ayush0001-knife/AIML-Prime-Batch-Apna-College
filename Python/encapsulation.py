@@ -16,4 +16,7 @@ print(acc1.name)
 print(acc1._balance)      
 print("Previous Account Number:", acc1.get_accNo())
 acc1.set_accNo(9876543210)
-print("Updated Account Number:", acc1.get_accNo())
+print("Updated Account Number:", acc1.get_accNo()) 
+
+print(acc1._bankAccount__accNo) # Accessing private variable using name mangling (not recommended)
+
