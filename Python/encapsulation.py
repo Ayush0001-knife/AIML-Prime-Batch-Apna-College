@@ -8,9 +8,12 @@ class bankAccount:
       def get_accNo(self):    # getter function to access private variable
             return self.__accNo  
 
-      
+      def set_accNo(self,newAccNo):  # setter function to modify private variable
+            self.__accNo = newAccNo 
 
 acc1=bankAccount("Ayush",10000,1234567890)
 print(acc1.name) 
-print(acc1._balance)
-print(acc1.get_accNo())  # accessing private variable through getter function
+print(acc1._balance)      
+print("Previous Account Number:", acc1.get_accNo())
+acc1.set_accNo(9876543210)
+print("Updated Account Number:", acc1.get_accNo())
