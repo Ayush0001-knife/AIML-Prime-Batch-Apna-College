@@ -5,5 +5,8 @@ try:
 except ZeroDivisionError:
       print("Divide by zero is not allowed")
 
+except ValueError:
+      print("Invalid Input")
+
 else:
       print("ans : ",ans)
