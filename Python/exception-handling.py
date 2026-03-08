@@ -11,5 +11,5 @@ except ValueError:
 else:
       print("ans : ",ans)
 
-finally:  # this will run even if exception is throwed or not 
+finally:  # this will run even if exception is throwed or  
       print("Program Completed")      
