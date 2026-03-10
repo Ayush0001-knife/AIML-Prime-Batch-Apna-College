@@ -1,0 +1,14 @@
+{
+      "name":"Ayush",
+      "college_name":"GNIOT",
+      "year":"2",
+      "course":"BTECH",
+      "branch":"CSE",
+      "is_student":true,
+      "address":{
+            "city":"Noida",
+            "state":"Uttar Pradesh",
+            "country":"INDIA"
+      },
+      "subjects":["Python","Java","C++"]
+}
